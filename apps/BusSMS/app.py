@@ -1,6 +1,6 @@
 import re
 from rapidsms.apps.base import AppBase
-from BusSMS.models import StopTimes
+from BusSMS.models import StopTime, Trip, Route
 
 class App(AppBase):
 
