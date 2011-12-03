@@ -29,8 +29,8 @@ class Route(models.Model):
 
 class Trip(models.Model):
    direction_id = models.CharField(max_length=3)
-   route_id = models.CharField(max_length=10)
+   route = models.ForeignKey(Route)
 
 class StopTime(models.Model):
    arrival_time = models.CharField(max_length=15)
-   trip_id = models.CharField(max_length=15)
+   trip = models.ManyToManyField(Trip)
