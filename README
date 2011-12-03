@@ -1,0 +1,22 @@
+# Run through the django tutorial quickly before attempting
+
+#Dependencies
+
+rapidsms
+django
+python 2.*
+ 
+# Initialization steps
+
+# From root directory run:
+
+chmod +x manage.py
+
+./manage.py syncdb
+
+./manage.py runserver
+
+./manage.py runrouter
+
+127.0.0.1:8000 is the default IP/port
+
