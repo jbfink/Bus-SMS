@@ -24,13 +24,33 @@ class Calendar(models.Model):
 '''
 # The Field types/attributes are subject to change in the near future   
 class Route(models.Model):
+
+   def __unicode__(self):
+      return str(self.pk) + ' ' + self.route_short_name
+
    route_long_name = models.CharField(max_length=40)
-   route_short_name = models.CharField(max_length=4)
+   route_short_name = models.CharField(max_length=4, unique=True)
 
 class Trip(models.Model):
-   direction_id = models.CharField(max_length=3)
+   
+   def __unicode__(self):
+      return str(self.pk)
+
    route = models.ForeignKey(Route)
 
+class Stop(models.Model):
+
+   def __unicode__(self):
+      return str(self.pk) + ' ' + self.stop_id
+
+   stop_id = models.CharField(max_length=16, unique=True)
+
 class StopTime(models.Model):
-   arrival_time = models.CharField(max_length=15)
-   trip = models.ManyToManyField(Trip)
+
+   def __unicode__(self):
+      return str(self.pk) + ' ' + str(self.arrival_time)
+
+   arrival_time = models.TimeField() 
+   trip = models.ForeignKey(Trip)
+   stop = models.ForeignKey(Stop, to_field='stop_id')
+   
