@@ -3,206 +3,448 @@
         "pk": 1,
         "model": "BusSMS.route",
         "fields": {
-            "route_short_name": "58C",
-            "route_long_name": "ABERDEEN"
+            "route_long_name": "Airport - Bullfrog",
+            "route_id": "AB",
+            "route_short_name": "10"
         }
     },
     {
         "pk": 2,
         "model": "BusSMS.route",
         "fields": {
-            "route_short_name": "1",
-            "route_long_name": "KING"
+            "route_long_name": "Bullfrog - Furnace Creek Resort",
+            "route_id": "BFC",
+            "route_short_name": "20"
         }
     },
     {
         "pk": 3,
         "model": "BusSMS.route",
         "fields": {
-            "route_short_name": "1A",
-            "route_long_name": "BARTON"
+            "route_long_name": "Stagecoach - Airport Shuttle",
+            "route_id": "STBA",
+            "route_short_name": "30"
         }
     },
     {
         "pk": 4,
         "model": "BusSMS.route",
         "fields": {
-            "route_short_name": "58",
-            "route_long_name": "MAIN"
+            "route_long_name": "City Loop",
+            "route_id": "CITY",
+            "route_short_name": "40"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "BusSMS.route",
+        "fields": {
+            "route_long_name": "Airport - Amargosa Valley",
+            "route_id": "AAMV",
+            "route_short_name": "50"
         }
     },
     {
         "pk": 1,
         "model": "BusSMS.trip",
         "fields": {
-            "route": 1
+            "route": "AB",
+            "trip_id": "AB1"
         }
     },
     {
         "pk": 2,
         "model": "BusSMS.trip",
         "fields": {
-            "route": 2
+            "route": "AB",
+            "trip_id": "AB2"
         }
     },
     {
         "pk": 3,
         "model": "BusSMS.trip",
         "fields": {
-            "route": 1
+            "route": "STBA",
+            "trip_id": "STBA"
         }
     },
     {
         "pk": 4,
         "model": "BusSMS.trip",
         "fields": {
-            "route": 2
+            "route": "CITY",
+            "trip_id": "CITY1"
         }
     },
     {
         "pk": 5,
         "model": "BusSMS.trip",
         "fields": {
-            "route": 3
+            "route": "CITY",
+            "trip_id": "CITY2"
         }
     },
     {
         "pk": 6,
         "model": "BusSMS.trip",
         "fields": {
-            "route": 3
+            "route": "BFC",
+            "trip_id": "BFC1"
         }
     },
     {
         "pk": 7,
         "model": "BusSMS.trip",
         "fields": {
-            "route": 4
+            "route": "BFC",
+            "trip_id": "BFC2"
         }
     },
     {
         "pk": 8,
         "model": "BusSMS.trip",
         "fields": {
-            "route": 4
+            "route": "AAMV",
+            "trip_id": "AAMV1"
         }
     },
     {
-        "pk": 1,
-        "model": "BusSMS.stop",
+        "pk": 9,
+        "model": "BusSMS.trip",
         "fields": {
-            "stop_id": "1341"
+            "route": "AAMV",
+            "trip_id": "AAMV2"
         }
     },
     {
-        "pk": 2,
-        "model": "BusSMS.stop",
+        "pk": 10,
+        "model": "BusSMS.trip",
         "fields": {
-            "stop_id": "4315"
+            "route": "AAMV",
+            "trip_id": "AAMV3"
         }
     },
     {
-        "pk": 3,
-        "model": "BusSMS.stop",
+        "pk": 11,
+        "model": "BusSMS.trip",
         "fields": {
-            "stop_id": "4214"
-        }
-    },
-    {
-        "pk": 4,
-        "model": "BusSMS.stop",
-        "fields": {
-            "stop_id": "4532"
+            "route": "AAMV",
+            "trip_id": "AAMV4"
         }
     },
     {
         "pk": 1,
         "model": "BusSMS.stoptime",
         "fields": {
-            "arrival_time": "08:30:53",
-            "stop": "1341",
-            "trip": 1
+            "stop": "STAGECOACH",
+            "arrival_time": "6:00:00",
+            "trip": "STBA"
         }
     },
     {
         "pk": 2,
         "model": "BusSMS.stoptime",
         "fields": {
-            "arrival_time": "08:31:16",
-            "stop": "4315",
-            "trip": 1
+            "stop": "BEATTY_AIRPORT",
+            "arrival_time": "6:20:00",
+            "trip": "STBA"
         }
     },
     {
         "pk": 3,
         "model": "BusSMS.stoptime",
         "fields": {
-            "arrival_time": "08:31:25",
-            "stop": "4214",
-            "trip": 1
+            "stop": "STAGECOACH",
+            "arrival_time": "6:00:00",
+            "trip": "CITY1"
         }
     },
     {
         "pk": 4,
         "model": "BusSMS.stoptime",
         "fields": {
-            "arrival_time": "08:31:32",
-            "stop": "4532",
-            "trip": 1
+            "stop": "NANAA",
+            "arrival_time": "6:05:00",
+            "trip": "CITY1"
         }
     },
     {
         "pk": 5,
         "model": "BusSMS.stoptime",
         "fields": {
-            "arrival_time": "08:31:41",
-            "stop": "1341",
-            "trip": 2
+            "stop": "NADAV",
+            "arrival_time": "6:12:00",
+            "trip": "CITY1"
         }
     },
     {
         "pk": 6,
         "model": "BusSMS.stoptime",
         "fields": {
-            "arrival_time": "08:31:51",
-            "stop": "4214",
-            "trip": 2
+            "stop": "DADAN",
+            "arrival_time": "6:19:00",
+            "trip": "CITY1"
         }
     },
     {
         "pk": 7,
         "model": "BusSMS.stoptime",
         "fields": {
-            "arrival_time": "08:32:01",
-            "stop": "1341",
-            "trip": 3
+            "stop": "EMSI",
+            "arrival_time": "6:26:00",
+            "trip": "CITY1"
         }
     },
     {
         "pk": 8,
         "model": "BusSMS.stoptime",
         "fields": {
-            "arrival_time": "08:32:09",
-            "stop": "4214",
-            "trip": 3
+            "stop": "EMSI",
+            "arrival_time": "6:28:00",
+            "trip": "CITY2"
         }
     },
     {
         "pk": 9,
         "model": "BusSMS.stoptime",
         "fields": {
-            "arrival_time": "08:32:20",
-            "stop": "1341",
-            "trip": 4
+            "stop": "DADAN",
+            "arrival_time": "6:35:00",
+            "trip": "CITY2"
         }
     },
     {
         "pk": 10,
         "model": "BusSMS.stoptime",
         "fields": {
-            "arrival_time": "08:32:30",
-            "stop": "4532",
-            "trip": 4
+            "stop": "NADAV",
+            "arrival_time": "6:42:00",
+            "trip": "CITY2"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "NANAA",
+            "arrival_time": "6:49:00",
+            "trip": "CITY2"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "STAGECOACH",
+            "arrival_time": "6:56:00",
+            "trip": "CITY2"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "BEATTY_AIRPORT",
+            "arrival_time": "8:00:00",
+            "trip": "AB1"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "BULLFROG",
+            "arrival_time": "8:10:00",
+            "trip": "AB1"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "BULLFROG",
+            "arrival_time": "12:05:00",
+            "trip": "AB2"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "BEATTY_AIRPORT",
+            "arrival_time": "12:15:00",
+            "trip": "AB2"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "BULLFROG",
+            "arrival_time": "8:20:00",
+            "trip": "BFC1"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "FUR_CREEK_RES",
+            "arrival_time": "9:20:00",
+            "trip": "BFC1"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "FUR_CREEK_RES",
+            "arrival_time": "11:00:00",
+            "trip": "BFC2"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "BULLFROG",
+            "arrival_time": "12:00:00",
+            "trip": "BFC2"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "BEATTY_AIRPORT",
+            "arrival_time": "8:00:00",
+            "trip": "AAMV1"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "AMV",
+            "arrival_time": "9:00:00",
+            "trip": "AAMV1"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "AMV",
+            "arrival_time": "10:00:00",
+            "trip": "AAMV2"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "BEATTY_AIRPORT",
+            "arrival_time": "11:00:00",
+            "trip": "AAMV2"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "BEATTY_AIRPORT",
+            "arrival_time": "13:00:00",
+            "trip": "AAMV3"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "AMV",
+            "arrival_time": "14:00:00",
+            "trip": "AAMV3"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "AMV",
+            "arrival_time": "15:00:00",
+            "trip": "AAMV4"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "BusSMS.stoptime",
+        "fields": {
+            "stop": "BEATTY_AIRPORT",
+            "arrival_time": "16:00:00",
+            "trip": "AAMV4"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "BusSMS.stop",
+        "fields": {
+            "stop_id": "FUR_CREEK_RES"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "BusSMS.stop",
+        "fields": {
+            "stop_id": "BEATTY_AIRPORT"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "BusSMS.stop",
+        "fields": {
+            "stop_id": "BULLFROG"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "BusSMS.stop",
+        "fields": {
+            "stop_id": "STAGECOACH"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "BusSMS.stop",
+        "fields": {
+            "stop_id": "NADAV"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "BusSMS.stop",
+        "fields": {
+            "stop_id": "NANAA"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "BusSMS.stop",
+        "fields": {
+            "stop_id": "DADAN"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "BusSMS.stop",
+        "fields": {
+            "stop_id": "EMSI"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "BusSMS.stop",
+        "fields": {
+            "stop_id": "AMV"
         }
     }
 ]
